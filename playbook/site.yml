@@ -1,0 +1,6 @@
+---
+- name: Test Playbook
+  hosts: localhost
+  gather_facts: true
+  roles:
+      - ansible-role-test

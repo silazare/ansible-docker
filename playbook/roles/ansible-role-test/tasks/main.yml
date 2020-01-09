@@ -1,0 +1,4 @@
+---
+- name: Test Message
+  debug:
+    msg: "Ansible test role"
