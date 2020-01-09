@@ -1,6 +1,6 @@
 # Ansible in Docker
 
-Docker image with pre-installed Ansible, to be used as Ansible control machine.
+Docker image with pre-installed Ansible 2.9.2 version.
 
 Base image: `ubuntu:bionic`
 
@@ -10,6 +10,11 @@ Base image: `ubuntu:bionic`
 
 ```sh
 docker build -t ansible .
+```
+- Build image with another Ansible version:
+
+```sh
+docker build --build-arg ANSIBLE_VERSION=2.8.6 -t ansible .
 ```
 
 - Go to playbook directory:
